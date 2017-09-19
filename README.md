@@ -1,13 +1,11 @@
 # bookeeper
-SJSU CmpE 131 Project
 Library Management System
 
 Objective: 
 This library management web application, Bookeeper, aims to create a platform in which books can be recorded in a collection and the status of the materials can be accessed with ease. 
 Bookeeper is suitable for library managers who want to record the books that are being carried in their library as well as manage the materials being checked out and returned.
 
-
-Project Abstract: 
+Abstract: 
 The objective of our project is to create a library management system with several key features depending upon whether one is a user or an admin. 
 The features of a user account will consist of a book database, a database search function, check out system, and a user account database. 
 First, the book database will be comprised of a book’s title, author, ISBN number, and availability information. 
