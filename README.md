@@ -1,13 +1,11 @@
 # bookeeper
-SJSU CmpE 131 Project
 Library Management System
 
 Objective: 
 This library management web application, Bookeeper, aims to create a platform in which books can be recorded in a collection and the status of the materials can be accessed with ease. 
 Bookeeper is suitable for library managers who want to record the books that are being carried in their library as well as manage the materials being checked out and returned.
 
-
-Project Abstract: 
+Abstract: 
 The objective of our project is to create a library management system with several key features depending upon whether one is a user or an admin. 
 The features of a user account will consist of a book database, a database search function, check out system, and a user account database. 
 First, the book database will be comprised of a book’s title, author, ISBN number, and availability information. 
@@ -26,8 +24,7 @@ The admin account database will be added in order to provide admins the ability 
 This admin account database will also contain the admin’s name, username, and four-digit PIN number information. 
 
 User Requirements
-1. As a new user, I would like to be able to register for a new account with my name, username, and four-digit PIN number.
-2. I would like to be able to log onto my personal profile using my username and four-digit PIN number. There will be a dropdown menu where I can choose if I am a user or an admin. After logging in, it will bring me to a page with different menu options. The menu options will be different depending on whether I am a user or an admin.
+1. As a new user, I would like to be able to register for a new account with my name, username, and four-digit PIN number. I would like to be able to log onto my personal profile using my username and four-digit PIN number. There will be a dropdown menu where I can choose if I am a user or an admin. After logging in, it will bring me to a page with different menu options. The menu options will be different depending on whether I am a user or an admin.
 3. As a general user, I would like to check out books and view the due dates. I would also like to be able to search for specific books in the database using the title, author, or ISBN number, and view their availability. 
 4. As an admin, I would like to be able to add new books into the database, remove books from the database. I would also like the ability to add users into the admin database to grant access to new admins. Similar to a general user, I can also search for specific books in the database by title, author, or ISBN number. I would like to check in returned books from users by marking the book status from “checked out” to “available.”
 
