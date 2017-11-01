@@ -11,22 +11,22 @@
         <div id="loginWrapper">
             <a href="index.html"><h3>BOOKEEPER</h3></a>
             <h4>library management system</h4>
-        </div>
-        <div class="container">  
-            <form id="contact" action="index.php" method="post">
-                <label for="username">USERNAME</label>
-                <fieldset>
-                    <input name="username" placeholder="YOUR USERNAME" type="text" tabindex="1" required>
-                </fieldset>
-                <label for="pin">4 DIGIT PIN</label>
-                <fieldset>
-                    <input name="pin" placeholder="YOUR 4 DIGIT PIN" type="pin" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">LOG IN</button>
-                </fieldset>
-                <h5><a href="register.html">SIGN UP HERE</a></h5>
-            </form>
+            <div class="container">  
+                <form id="contact" action="login" method="post">
+                    <label for="username">USERNAME</label>
+                    <fieldset>
+                        <input name="username" placeholder="YOUR USERNAME" type="text" tabindex="1" required>
+                    </fieldset>
+                    <label for="pin">4 DIGIT PIN</label>
+                    <fieldset>
+                        <input name="userpass" placeholder="YOUR 4 DIGIT PIN" type="pin" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">LOG IN</button>
+                    </fieldset>
+                    <h5><a href="register.html">SIGN UP HERE</a></h5>
+                </form>
+            </div>
         </div>
     </body>
 </html>

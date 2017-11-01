@@ -160,6 +160,7 @@ login / register page
     margin: 0 auto 50px auto;
     padding: 0;
     text-align: center;
+    overflow: none;
 }
 
 #registerWrapper
@@ -177,6 +178,7 @@ h3
     font-size: 3em;
     margin-bottom: -7px;
     font-weight: none;
+    padding-top: 10px;
 }
 
 h4
@@ -201,7 +203,7 @@ h4
 
 .container 
 {
-	max-width: 75%;
+	max-width: 60%;
 	width: 100%;
 	margin: -20px auto;
 	position: relative;
