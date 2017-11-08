@@ -343,6 +343,15 @@ user page
 /******************************************************** 
 profile page
 ********************************************************/
+#profileWrapper
+{
+    max-width: 100%;
+    background-color: #F9F9F9;
+    margin: 0 auto 50px auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
 
 /******************************************************** 
 search page

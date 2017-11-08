@@ -20,7 +20,7 @@ public class BookDao {
 			//root: password
 			//syntex : databaseurl/databasename, username , password
 			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/book", "root", "root", "root");
+					"jdbc:mysql://localhost:3306/book", "root", "root");
 			
 			
 
@@ -34,7 +34,7 @@ public class BookDao {
 			oPrStmt.setString(1, title);// parameter index start from 1
 			oPrStmt.setString(2, author);
 			oPrStmt.setString(3, isbn);
-			int nInsertedRecords = oPrStmt.executeUpdate(); // executing the query and getting the updated/inserted row counts from databse
+			int nInsertedRecords = oPrStmt.executeUpdate(); // executing the query and getting the updated/inserted row counts from database
 			
 			if(nInsertedRecords>0){ // check that the data is inserted successfully or not
 				isRecordInserted = true;
