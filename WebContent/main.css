@@ -212,6 +212,7 @@ h4
 	font-size: 17px;
 	line-height: 30px;
 	color: #777;
+    text-align: left;
 }
 
 #form input[type="text"], #form input[type="pin"], #form textarea, #form button[type="submit"] 
@@ -256,7 +257,7 @@ fieldset
 {
 	height:100px;
 	max-width:100%;
-  resize:none;
+    resize:none;
 }
 
 #form button[type="submit"] 
@@ -320,13 +321,7 @@ h5
     font-weight: normal;
 }
 
-a:hover
-{
-    color: #52aaaf;
-    text-decoration: none;
-}
-
-a, a:visited
+a, a:visited, a:hover
 {
     color: black;
     text-decoration: none;
@@ -395,6 +390,19 @@ search page
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-family: 'Raleway', sans-serif;
+}
+
+/******************************************************** 
+insert page
+********************************************************/
+#insertWrapper
+{
+    max-width: 100%;
+    background-color: #F9F9F9;
+    margin: 0 auto 50px auto;
+    padding: 0;
+    text-align: center;
+    overflow: none;
 }
 
 /******************************************************** 

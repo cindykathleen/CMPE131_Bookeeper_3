@@ -1,8 +1,43 @@
-<form action="save" method="post">
-Title:<input type="text" name="title"/><br/><br/>
-Author:<input type="text" name="author"/><br/><br/>
-ISBN (5 integers):<input type="text" name="isbn"/><br/><br/>
-
-<input type="submit" value="save"/>
-
-</form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bookeeper</title>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    </head>
+    <body>
+        <div id="insertWrapper">
+            <nav>
+                <ul>
+                    
+                    <li><a href="index.html"><img src="home.png" style="width: 25px; height: 25px;"></a></li>
+                    <li><a href="profile.html"><img src="profile.png" style="width: 25px; height: 25px;"></a></li>
+                    <li><a href="search.html"><img src="search.png" style="width: 25px; height: 25px;"></a></li>
+                </ul>
+            </nav>
+            <a href="index.html"><h3>BOOKEEPER</h3></a>
+            <h4>library management system</h4>
+            <div class="container">  
+                <form id="form" action="save" method="post">
+                    <label for="username">TITLE</label>
+                    <fieldset>
+                        <input name="title" placeholder="THE BOOK TITLE" type="text" tabindex="1" required>
+                    </fieldset>
+                    <label for="pin">AUTHOR</label>
+                    <fieldset>
+                        <input name="author" placeholder="THE BOOK AUTHOR" type="text" tabindex="2" required>
+                    </fieldset>
+                    <label for="pin">ISBN</label>
+                    <fieldset>
+                        <input name="isbn" placeholder="THE BOOK ISBN (5 DIGIT NUMBER)" type="pin" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="form-submit" data-submit="...Sending" value="save">INSERT BOOK</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
