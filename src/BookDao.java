@@ -20,7 +20,7 @@ public class BookDao {
 			//root: password
 			//syntex : databaseurl/databasename, username , password
 			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/book", "root", "root");
+					"jdbc:mysql://localhost:3306/book", "root", "");
 			
 			
 
@@ -29,7 +29,7 @@ public class BookDao {
 			// actual query to execute is
 			// select * from users where username = name and password = pass
 			PreparedStatement oPrStmt = con
-					.prepareStatement("INSERT INTO book (booktitle,bookauthor,bookisbn) VALUES(?,?,?)");// ? represents some parameter to include
+					.prepareStatement("INSERT INTO book (title,author,isbn) VALUES(?,?,?)");// ? represents some parameter to include
 																							
 			oPrStmt.setString(1, title);// parameter index start from 1
 			oPrStmt.setString(2, author);

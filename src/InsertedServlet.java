@@ -20,7 +20,7 @@ public class InsertedServlet extends HttpServlet {
 		String strTitle =request.getParameter("title");
 		String strAuthor = request.getParameter("author");
 		String strISBN = request.getParameter("isbn");
-		out.print("Book having name "+strTitle+" and author "+strAuthor + " with ISBN #"+strISBN + "is saved successfully");
+		out.print("Book having name "+strTitle+" and author "+strAuthor + " with ISBN #"+strISBN + " is saved successfully");
 		
 		out.close();
 	}
