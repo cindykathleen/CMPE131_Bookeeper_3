@@ -4,6 +4,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>LoginServlet</servlet-class>
@@ -12,7 +13,6 @@
     <servlet-name>LoggedInServlet</servlet-name>
     <servlet-class>LoggedInServlet</servlet-class>
   </servlet>
-
 
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -26,6 +26,9 @@
   <welcome-file-list>
     <welcome-file>login.html</welcome-file>
   </welcome-file-list>
+  
+  
+  
   
   <servlet>
     <servlet-name>InserionServlet</servlet-name>
@@ -47,6 +50,31 @@
  
   <welcome-file-list>
     <welcome-file>insert.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  
+    <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>RegsiterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisteredServlet</servlet-name>
+    <servlet-class>RegisteredServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/save2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisteredServlet</servlet-name>
+    <url-pattern>/saved2</url-pattern>
+  </servlet-mapping>
+ 
+  <welcome-file-list>
+    <welcome-file>register.html</welcome-file>
   </welcome-file-list>
   
 </web-app>
