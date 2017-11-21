@@ -30,7 +30,7 @@ public class InsertServlet extends HttpServlet {
 			rd.forward(request,response);
 		}
 		else{
-			out.print("Error occured while saving data.");
+			out.print("Error occured while inserting book.");
 			RequestDispatcher rd=request.getRequestDispatcher("insert.html");
 			rd.include(request,response);
 		}

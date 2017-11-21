@@ -1,14 +1,9 @@
-/*
-@author: Divyang Soni
-@date : 10/18/2017
-@ This class is having database related methods for login application
-*/
 import java.sql.*;
 
 public class RegisterDao {
 
-	public static boolean save2(String name, String username, String userpass) {
-		boolean isRecordInserted = false;
+	public static boolean register (String name, String username, String userpass) {
+		boolean isRecordRegistered = false;
 		try {
 			//defining database driver to use
 			Class.forName("com.mysql.jdbc.Driver");
@@ -37,13 +32,13 @@ public class RegisterDao {
 			int nInsertedRecords = oPrStmt.executeUpdate(); // executing the query and getting the updated/inserted row counts from database
 			
 			if(nInsertedRecords>0){ // check that the data is inserted successfully or not
-				isRecordInserted = true;
+				isRecordRegistered = true;
 			}
 			
 			
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		return isRecordInserted;
+		return isRecordRegistered;
 	}
 }

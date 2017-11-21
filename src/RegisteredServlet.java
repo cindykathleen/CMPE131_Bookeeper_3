@@ -17,10 +17,8 @@ public class RegisteredServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String strName = request.getParameter("name");
-//		String strUsername = request.getParameter("username");
-//		String strPassword = request.getParameter("userpass");
-		out.print("Thank you for registering," + strName + "!");
+		String strName =request.getParameter("name");
+		out.print("Thank you for registering, " + strName + "!");
 		
 		out.close();
 	}

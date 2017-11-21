@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /******************************************************** 
 header
 ********************************************************/
@@ -403,6 +408,34 @@ insert page
     padding: 0;
     text-align: center;
     overflow: none;
+}
+
+#insertedWrapper
+{
+    max-width: 100%;
+    background-color: #F9F9F9;
+    margin: 50px auto 50px auto;
+    padding: 0;
+    text-align: center;
+    overflow: visible;
+}
+
+#insertedWrapper a
+{
+    color: #57bdfd;
+}
+
+#insertedWrapper a:hover
+{
+    color: #2facfb;
+}
+
+h6
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
 /******************************************************** 

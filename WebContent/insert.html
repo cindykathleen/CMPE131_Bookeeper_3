@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     </head>
-    <body>
+    <body style="background-color: #F9F9F9">
         <div id="insertWrapper">
             <nav>
                 <ul>
@@ -21,17 +21,17 @@
             <h4>library management system</h4>
             <div class="container">  
                 <form id="form" action="save" method="post">
-                    <label for="username">TITLE</label>
+                    <label for="title">TITLE</label>
                     <fieldset>
                         <input name="title" placeholder="THE BOOK TITLE" type="text" tabindex="1" required>
                     </fieldset>
-                    <label for="pin">AUTHOR</label>
+                    <label for="author">AUTHOR</label>
                     <fieldset>
                         <input name="author" placeholder="THE BOOK AUTHOR" type="text" tabindex="2" required>
                     </fieldset>
-                    <label for="pin">ISBN</label>
+                    <label for="isbn">ISBN</label>
                     <fieldset>
-                        <input name="isbn" placeholder="THE BOOK ISBN (5 DIGIT NUMBER)" type="pin" tabindex="3" required>
+                        <input name="isbn" placeholder="THE BOOK ISBN (5 DIGIT NUMBER)" type="text" tabindex="3" required>
                     </fieldset>
                     <fieldset>
                         <button name="submit" type="submit" id="form-submit" data-submit="...Sending" value="save">INSERT BOOK</button>

@@ -1,8 +1,3 @@
-/*
-@author: Divyang Soni
-@date : 10/18/2017
-@ This class is having database related methods for login application
-*/
 import java.sql.*;
 
 public class BookDao {

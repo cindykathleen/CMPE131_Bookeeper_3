@@ -22,11 +22,11 @@ public class RegisterServlet extends HttpServlet {
 		
 		String strName=request.getParameter("name");
 		String strUsername=request.getParameter("username");
-		String strPassword=request.getParameter("userpass");
+		String strUserpass=request.getParameter("userpass");
 		
 		
-		if(RegisterDao.save2(strName, strUsername, strPassword)){
-			RequestDispatcher rd=request.getRequestDispatcher("saved2");
+		if(RegisterDao.register (strName, strUsername, strUserpass)){
+			RequestDispatcher rd=request.getRequestDispatcher("registered");
 			rd.forward(request,response);
 		}
 		else{
