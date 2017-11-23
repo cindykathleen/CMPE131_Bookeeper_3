@@ -20,12 +20,11 @@ public class RegisterServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String strName=request.getParameter("name");
-		String strUsername=request.getParameter("username");
-		String strUserpass=request.getParameter("userpass");
+		String strName = request.getParameter("name");
+		String strUsername = request.getParameter("username");
+		String strPassword = request.getParameter("password");
 		
-		
-		if(RegisterDao.register (strName, strUsername, strUserpass)){
+		if(RegisterDao.register (strName, strUsername, strPassword)){
 			RequestDispatcher rd=request.getRequestDispatcher("registered");
 			rd.forward(request,response);
 		}
