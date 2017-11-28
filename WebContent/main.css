@@ -177,6 +177,27 @@ login / register page
     text-align: center;
 }
 
+#registeredWrapper
+{
+    max-width: 100%;
+    background-color: #F9F9F9;
+    margin: 0 auto 50px auto;
+    padding: 0;
+    text-align: center;
+    overflow: none;
+}
+
+#thankyou
+{
+    margin: 50px auto;
+}
+
+#thankyou a, #thankyou a:hover
+{
+    color: #57bdfd;
+    font-weight: bold;
+}
+
 h3
 {
     font-family: 'Oswald', sans-serif;
