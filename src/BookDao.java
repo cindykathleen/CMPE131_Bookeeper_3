@@ -10,28 +10,21 @@ public class BookDao {
 			
 			//getting connection from the mysql database
 			//jdbc:mysql://localhost:3306 is database url
-			//login is database name
-			//root : username
-			//root: password
-			//syntex : databaseurl/databasename, username , password
 			Connection con = DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/book", "root", "");
-			
-			
 
 			//prepared statement is used for secure access
 			// ? used for data to put in query
 			// actual query to execute is
-			// select * from users where username = name and password = pass
 			PreparedStatement oPrStmt = con
-					.prepareStatement("INSERT INTO book (title,author,isbn) VALUES(?,?,?)");// ? represents some parameter to include
+					.prepareStatement("INSERT INTO book (title,author,isbn) VALUES(?,?,?)");
 																							
-			oPrStmt.setString(1, title);// parameter index start from 1
+			oPrStmt.setString(1, title);
 			oPrStmt.setString(2, author);
 			oPrStmt.setString(3, isbn);
-			int nInsertedRecords = oPrStmt.executeUpdate(); // executing the query and getting the updated/inserted row counts from database
+			int nInsertedRecords = oPrStmt.executeUpdate();
 			
-			if(nInsertedRecords>0){ // check that the data is inserted successfully or not
+			if(nInsertedRecords>0){ 
 				isRecordInserted = true;
 			}
 			

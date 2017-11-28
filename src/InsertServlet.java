@@ -29,6 +29,7 @@ public class InsertServlet extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("saved");
 			rd.forward(request,response);
 		}
+		
 		else{
 			out.print("Error occured while inserting book.");
 			RequestDispatcher rd=request.getRequestDispatcher("insert.html");

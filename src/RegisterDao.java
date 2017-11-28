@@ -10,9 +10,6 @@ public class RegisterDao {
 			
 			//getting connection from the mysql database
 			//jdbc:mysql://localhost:3306 is database url
-			//login is database name
-			//root : username
-			//root: password
 			//syntex : databaseurl/databasename, username , password
 			Connection con = DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/login", "root", "");
@@ -20,16 +17,15 @@ public class RegisterDao {
 			//prepared statement is used for secure access
 			// ? used for data to put in query
 			// actual query to execute is
-			// select * from users where username = name and password = pass
 			PreparedStatement oPrStmt = con
-					.prepareStatement("INSERT INTO users (name, username, password) VALUES(?,?,?)");// ? represents some parameter to include
+					.prepareStatement("INSERT INTO users (name, username, password) VALUES(?,?,?)");
 																							
-			oPrStmt.setString(1, name);// parameter index start from 1
+			oPrStmt.setString(1, name);
 			oPrStmt.setString(2, username);
 			oPrStmt.setString(3, password);
-			int nInsertedRecords = oPrStmt.executeUpdate(); // executing the query and getting the updated/inserted row counts from database
+			int nInsertedRecords = oPrStmt.executeUpdate();
 			
-			if(nInsertedRecords>0){ // check that the data is inserted successfully or not
+			if(nInsertedRecords>0){
 				isRecordRegistered = true;
 			}
 			

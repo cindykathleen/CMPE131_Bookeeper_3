@@ -28,6 +28,7 @@ public class RegisterServlet extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("registered");
 			rd.forward(request,response);
 		}
+		
 		else{
 			out.print("Error occured while registering.");
 			RequestDispatcher rd=request.getRequestDispatcher("register.html");

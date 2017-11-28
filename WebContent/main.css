@@ -383,16 +383,13 @@ profile page
     padding: 0;
     text-align: center;
     overflow: visible;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.1em;
-    font-weight: normal;
     margin-top: 50px;
 }
 
 h8
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     text-decoration: underline;
 }

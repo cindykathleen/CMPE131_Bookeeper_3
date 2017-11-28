@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,8 +18,8 @@ public class RegisteredServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String strName =request.getParameter("name");
-		out.print("Thank you for registering, " + strName + "!");
+		RequestDispatcher rd=request.getRequestDispatcher("registered.html");
+		rd.include(request,response);
 		
 		out.close();
 	}

@@ -11,7 +11,6 @@
         <div id="searchWrapper">
             <nav>
                 <ul>
-                    
                     <li><a href="index.html"><img src="home.png" style="width: 25px; height: 25px;"></a></li>
                     <li><a href="profile.html"><img src="profile.png" style="width: 25px; height: 25px;"></a></li>
                     <li><a href="search.html"><img src="search.png" style="width: 25px; height: 25px;"></a></li>
@@ -19,6 +18,25 @@
             </nav>
             <a href="index.html"><h3>BOOKEEPER</h3></a>
             <h4>library management system</h4>
+            <div class="container">  
+                <form id="form" action="save" method="post">
+                    <label for="title">TITLE</label>
+                    <fieldset>
+                        <input name="title" placeholder="THE BOOK TITLE" type="text" tabindex="1" required>
+                    </fieldset>
+                    <label for="author">AUTHOR</label>
+                    <fieldset>
+                        <input name="author" placeholder="THE BOOK AUTHOR" type="text" tabindex="2" required>
+                    </fieldset>
+                    <label for="isbn">ISBN</label>
+                    <fieldset>
+                        <input name="isbn" placeholder="THE BOOK ISBN (5 DIGIT NUMBER)" type="text" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="form-submit" data-submit="...Sending" value="save">SEARCH BOOK</button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </body>
 </html>

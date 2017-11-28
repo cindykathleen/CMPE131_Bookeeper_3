@@ -18,11 +18,9 @@ public class LoginDao {
 			//login is database name
 			//root : username
 			//root: password
-			//syntex : databaseurl/databasename, username , password
+			//syntax : databaseurl/databasename, username , password
 			Connection con = DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/login", "root", "");
-			
-			
 
 			//prepared statement is used for secure access
 			// ? used for data to put in query
@@ -33,12 +31,12 @@ public class LoginDao {
 																							
 			oPrStmt.setString(1, name);// parameter index start from 1
 			oPrStmt.setString(2, pass);
-			ResultSet rs = oPrStmt.executeQuery(); // executing the query and getting the resultset from databse
+			ResultSet rs = oPrStmt.executeQuery(); // executing the query and getting the result set from database
 			
-			//rs.next() shows that the resultset contains nect value or not
-			// for retriving multiple results, you can use while(rs.next)
+			//rs.next() shows that the result set contains next value or not
+			// for retrieving multiple results, you can use while(rs.next)
 			
-			if (rs.next()) { //checking if the resultset has any value?   
+			if (rs.next()) { //checking if the result set has any value?   
 				validLogin = true;
 			}
 		
