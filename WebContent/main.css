@@ -347,10 +347,39 @@ profile page
 {
     max-width: 100%;
     background-color: #F9F9F9;
-    margin: 0 auto 50px auto;
     padding: 0;
     text-align: center;
+    overflow: visible;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+#profileWrapper2
+{
+    max-width: 100%;
+    background-color: #F9F9F9;
+    padding: 0;
+    text-align: center;
+    overflow: visible;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+h8
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#profileWrapper2 a:hover
+{
+    color: #57bdfd;
+    font-weight: bold;
 }
 
 /******************************************************** 
@@ -420,17 +449,13 @@ insert page
     overflow: visible;
 }
 
-#insertedWrapper a
-{
-    color: #57bdfd;
-}
-
-#insertedWrapper a:hover
+#insertedWrapper a:hover, #insertedWrapper a
 {
     color: #2facfb;
+    font-weight: bold;
 }
 
-h6
+h7
 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
