@@ -3,4 +3,39 @@
   <groupId>com.bookeeper.app</groupId>
   <artifactId>bookeeper</artifactId>
   <version>1</version>
+  <build>
+    <plugins>
+      <plugin>
+         <artifactId>maven-war-plugin</artifactId>
+         <configuration>
+           <archive>
+             <manifest>
+               <addClasspath>true</addClasspath>
+               <classpathPrefix>src/</classpathPrefix>
+             </manifest>
+           </archive>
+         </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
+
+<!-- <plugin>
+   <groupId>org.apache.maven.plugins</groupId>
+   <artifactId>maven-surefire-plugin</artifactId>
+   <configuration>
+       <skipTests>false</skipTests>
+       <excludes>
+           <exclude>**/*$*.java</exclude>
+       </excludes>
+           <systemProperties>
+              <property>
+                 <name>-Dlog4j.configuration</name>
+                 <value>file:src/test/resources/cfg/log4j.xml</value>
+              </property>
+           </systemProperties>
+       <additionalClasspathElements>
+           <additionalClasspathElement>${basedir}/src/test/resources/cfg/</additionalClasspathElement>
+       </additionalClasspathElements>
+   </configuration>
+</plugin> -->
