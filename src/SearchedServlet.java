@@ -14,10 +14,13 @@ public class SearchedServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
+<<<<<<< HEAD
 		
 		
 		RequestDispatcher rd=request.getRequestDispatcher("search.html");
 		rd.include(request,response);
+=======
+>>>>>>> 5790deb9dbd12b3b5d22560dbd3f462c06ed2fc1
 		
 		out.close();
 	}
