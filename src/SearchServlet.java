@@ -18,10 +18,15 @@ public class SearchServlet extends HttpServlet {
 		String t=request.getParameter("title");
 /*		String p=request.getParameter("userpass");
 */		
-		if(SearchDao.validate(t)){
-			RequestDispatcher rd=request.getRequestDispatcher("searched");
-			rd.forward(request,response);
-			//print to some page 
+		if(SearchDao.validate(t).isRecordSearched){
+			out.print(SearchDao.validate(t).bookString);
+			
+			RequestDispatcher rd=request.getRequestDispatcher("search.html");
+			rd.include(request,response);
+			
+			/*RequestDispatcher rd=request.getRequestDispatcher("searched");
+			rd.forward(request,response);*/
+			 
 		}
 		
 		else{

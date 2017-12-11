@@ -10,8 +10,12 @@ public class SearchDao {
 	*/
 
 
-		public static boolean validate(String booktitle) {
-			boolean isRecordSearched = false;
+		public static searchResponse validate(String booktitle) {
+			//boolean isRecordSearched = false;
+			searchResponse search= new searchResponse();
+			
+			search.isRecordSearched =false;
+			
 			try {
 				//defining database driver to use
 				Class.forName("com.mysql.jdbc.Driver");
@@ -50,14 +54,14 @@ public class SearchDao {
 					matchingTitles.add(authors);
 					matchingTitles.add(isbns);
 					
-					isRecordSearched = true;
+					search.isRecordSearched = true;
 				}
-			if(isRecordSearched){
-				System.out.println(matchingTitles);
+			if(search.isRecordSearched){
+				search.bookString=matchingTitles;
 			}
 			} catch (Exception e) {
 				System.out.println(e);
 			}
-			return isRecordSearched;
+			return search;
 		}
 	}
