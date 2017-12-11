@@ -6,6 +6,21 @@ html, body {
 /******************************************************** 
 header
 ********************************************************/
+h3
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    margin-bottom: -7px;
+    font-weight: none;
+    padding-top: 10px;
+}
+
+h4
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: none;
+}
 
 /******************************************************** 
 navigation
@@ -38,48 +53,6 @@ h7
 {
     font-family: 'Oswald', sans-serif;
     font-size: 1em;
-}
-
-/******************************************************** 
-footer
-********************************************************/
-#footerWrapper
-{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 8px 0;
-    background-color: #F9F9F9;
-    overflow: hidden;
-}
-
-footer
-{
-    text-align: center;
-    clear: both;
-    font-family: 'Raleway', sans-serif;
-}
-
-#footerLeft
-{
-    float: left;
-    width: 33%;
-}
-
-#footerMiddle
-{
-    float: left;
-    width: 34%;
-}
-
-#footerRight
-{
-    float: left;
-    width: 33%;
-}
-
-#footerRight a, #footerRight a:visited, #footerRight a:hover
-{
-    color: white;
 }
 
 /******************************************************** 
@@ -156,64 +129,8 @@ h6
 }
 
 /******************************************************** 
-login / register page
+form format
 ********************************************************/
-#loginWrapper
-{
-    max-width: 100%;
-    background-color: #F9F9F9;
-    margin: 0 auto 50px auto;
-    padding: 0;
-    text-align: center;
-    overflow: none;
-}
-
-#registerWrapper
-{
-    max-width: 100%;
-    background-color: #F9F9F9;
-    margin: 0 auto 50px auto;
-    padding: 0;
-    text-align: center;
-}
-
-#registeredWrapper
-{
-    max-width: 100%;
-    background-color: #F9F9F9;
-    margin: 0 auto 50px auto;
-    padding: 0;
-    text-align: center;
-    overflow: none;
-}
-
-#thankyou
-{
-    margin: 50px auto;
-}
-
-#thankyou a, #thankyou a:hover
-{
-    color: #57bdfd;
-    font-weight: bold;
-}
-
-h3
-{
-    font-family: 'Oswald', sans-serif;
-    font-size: 3em;
-    margin-bottom: -7px;
-    font-weight: none;
-    padding-top: 10px;
-}
-
-h4
-{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    font-weight: none;
-}
-
 * {
 	margin:0;
 	padding:0;
@@ -338,6 +255,49 @@ fieldset
     font-family: 'Oswald', sans-serif;
 }
 
+/******************************************************** 
+login / register pages
+********************************************************/
+#loginWrapper
+{
+    max-width: 100%;
+    background-color: #F9F9F9;
+    margin: 0 auto 50px auto;
+    padding: 0;
+    text-align: center;
+    overflow: none;
+}
+
+#registerWrapper
+{
+    max-width: 100%;
+    background-color: #F9F9F9;
+    margin: 0 auto 50px auto;
+    padding: 0;
+    text-align: center;
+}
+
+#registeredWrapper
+{
+    max-width: 100%;
+    background-color: #F9F9F9;
+    margin: 0 auto 50px auto;
+    padding: 0;
+    text-align: center;
+    overflow: none;
+}
+
+#thankyou
+{
+    margin: 50px auto;
+}
+
+#thankyou a, #thankyou a:hover
+{
+    color: #57bdfd;
+    font-weight: bold;
+}
+
 h5
 {
     font-family: 'Oswald', sans-serif;
@@ -352,14 +312,6 @@ a, a:visited, a:hover
     color: black;
     text-decoration: none;
 }
-
-/******************************************************** 
-admin page
-********************************************************/
-
-/******************************************************** 
-user page
-********************************************************/
 
 /******************************************************** 
 profile page
@@ -445,7 +397,7 @@ search page
 }
 
 /******************************************************** 
-insert page
+insert / remove pages
 ********************************************************/
 #insertWrapper
 {
