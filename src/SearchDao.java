@@ -58,16 +58,14 @@ public class SearchDao {
 					
 					search.isRecordSearched = true;
 				}
-<<<<<<< HEAD
-			if(search.isRecordSearched){
-				search.bookString=matchingTitles;
-=======
 				
-			if(isRecordSearched){
-				System.out.println(matchingTitles);
->>>>>>> 5790deb9dbd12b3b5d22560dbd3f462c06ed2fc1
+			if(search.isRecordSearched)
+			{
+				search.bookString=matchingTitles;
 			}
-			} catch (Exception e) {
+			
+			} catch (Exception e) 
+			{
 				System.out.println(e);
 			}
 			return search;

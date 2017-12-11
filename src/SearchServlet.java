@@ -16,7 +16,6 @@ public class SearchServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		String t=request.getParameter("title");
-<<<<<<< HEAD
 /*		String p=request.getParameter("userpass");
 */		
 		if(SearchDao.validate(t).isRecordSearched){
@@ -27,13 +26,6 @@ public class SearchServlet extends HttpServlet {
 			
 			/*RequestDispatcher rd=request.getRequestDispatcher("searched");
 			rd.forward(request,response);*/
-			 
-=======
-	
-		if(SearchDao.validate(t)){
-			RequestDispatcher rd=request.getRequestDispatcher("searched");
-			rd.forward(request,response);
->>>>>>> 5790deb9dbd12b3b5d22560dbd3f462c06ed2fc1
 		}
 		
 		else{
