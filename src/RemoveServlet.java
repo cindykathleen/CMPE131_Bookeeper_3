@@ -28,8 +28,7 @@ public class RemoveServlet extends HttpServlet {
 		}
 		
 		else{
-			out.print("Error occured while removing book.");
-			RequestDispatcher rd=request.getRequestDispatcher("remove.html");
+			RequestDispatcher rd=request.getRequestDispatcher("removed2.html");
 			rd.include(request,response);
 		}
 		

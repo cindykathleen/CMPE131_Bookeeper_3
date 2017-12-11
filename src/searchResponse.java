@@ -6,6 +6,4 @@ public class searchResponse {
 	    public List <String> bookString;
 
 	    public boolean isRecordSearched;
-
-	
 }
