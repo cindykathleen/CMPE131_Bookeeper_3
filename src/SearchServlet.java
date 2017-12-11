@@ -16,12 +16,10 @@ public class SearchServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		String t=request.getParameter("title");
-/*		String p=request.getParameter("userpass");
-*/		
+	
 		if(SearchDao.validate(t)){
 			RequestDispatcher rd=request.getRequestDispatcher("searched");
 			rd.forward(request,response);
-			//print to some page 
 		}
 		
 		else{

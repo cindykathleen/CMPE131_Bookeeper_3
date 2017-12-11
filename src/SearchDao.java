@@ -1,6 +1,8 @@
-	import java.sql.*;
-	import java.util.ArrayList;
-	import java.util.List;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.io.IOException;
+import java.io.PrintWriter;
 	
 public class SearchDao {
 	/*
@@ -52,6 +54,7 @@ public class SearchDao {
 					
 					isRecordSearched = true;
 				}
+				
 			if(isRecordSearched){
 				System.out.println(matchingTitles);
 			}

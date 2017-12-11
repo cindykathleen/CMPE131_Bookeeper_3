@@ -14,9 +14,6 @@ public class SearchedServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-
-		RequestDispatcher rd=request.getRequestDispatcher("search.html");
-		rd.include(request,response);
 		
 		out.close();
 	}
